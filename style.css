@@ -1,0 +1,323 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	position: relative;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Coiny');
+.firstCalc {
+	font-family: 'Coiny', cursive;
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;	
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/clouds.jpg);
+	background-size: auto;
+	background-attachment: unset;
+	position: absolute;
+	width: 80%;
+	margin: 0px 0px 0px -100px;
+	font-size: 80px;
+	animation: clouds-moving infinite 220s;
+	animation-fill-mode: forwards;
+	animation-play-state: running;
+	animation-timing-function: linear;
+	text-align: center;
+}
+
+@keyframes clouds-moving {
+	0% {
+		background-position: 0%;	
+	}
+	50% {
+		background-position: 100%;	
+	}
+	100% {
+		background-position: 0%;
+	}
+}
+
+
+.output {
+	background-color: black;
+	color:white;
+	border: 2px solid black;
+	width: 210px;
+	height: 60px;
+	font-size: 2rem;
+	font-family: Helvetica, sans-serif;
+	margin: 0 0 0 0 ;
+	padding: 0px 0px 50px 0px; 
+	position: relative;
+	text-align: right;
+	word-wrap: break-word;
+	word-break: break-all;
+
+}
+
+.previous-operand {
+	font-size: 1rem;
+	margin: 0 0 0 0 ;
+	padding: 0px 0px 0px 0px; 
+	color:gray;
+	
+}
+
+.calc{
+
+	margin: 300px 300px 300px 300px;
+	
+	padding: 50px 50px 325px 50px;
+	position: absolute;
+	border: 2px solid rgb(85, 83, 83);
+	border-radius: 10%;
+	
+}
+.CBtn {
+	height: 50px;
+	width: 50px;
+	border: 2px solid rgb(190, 182, 182);
+	border-radius: 50%;
+	color: black;
+	background-color: rgb(190, 182, 182);
+	text-align: center;
+	padding: 0%;
+	position: absolute;
+	margin: 0px 0px 0px 0px;
+}
+.negBtn {
+	height: 50px;
+	width: 50px;
+	border: 2px solid rgb(190, 182, 182);
+	border-radius: 50%;
+	color: black;
+	background-color: rgb(190, 182, 182);
+	text-align: center;
+	padding: 0%;
+	position: absolute;
+	margin: 0px 0px 0px 55px;
+}
+.percentBtn {
+	height: 50px;
+	width: 50px;
+	border: 2px solid rgb(190, 182, 182);
+	border-radius: 50%;
+	color: black;
+	background-color: rgb(190, 182, 182);
+	text-align: center;
+	padding: 0%;
+	position: absolute;
+	margin: 0px 0px 0px 110px;
+}
+.divBtn {
+	height: 50px;
+	width: 50px;
+	border: 2px solid rgb(219, 156, 62);
+	border-radius: 50%;
+	color: whitesmoke;
+	background-color: rgb(219, 156, 62);
+	text-align: center;
+	padding: 0%;
+	position: absolute;
+	margin: 0px 0px 0px 165px;
+}
+.sevenBtn {
+	height: 50px;
+	width: 50px;
+	border: 2px solid rgb(58, 56, 53);
+	border-radius: 50%;
+	color: whitesmoke;
+	background-color: rgb(58, 56, 53);
+	text-align: center;
+	padding: 0%;
+	position: absolute;
+	margin: 55px 0px 0px 0px;
+}
+.eightBtn {
+	height: 50px;
+	width: 50px;
+	border: 2px solid rgb(58, 56, 53);
+	border-radius: 50%;
+	color: whitesmoke;
+	background-color: rgb(58, 56, 53);
+	text-align: center;
+	padding: 0%;
+	position: absolute;
+	margin: 55px 0px 0px 55px;
+}
+.nineBtn {
+	height: 50px;
+	width: 50px;
+	border: 2px solid rgb(58, 56, 53);
+	border-radius: 50%;
+	color: whitesmoke;
+	background-color: rgb(58, 56, 53);
+	text-align: center;
+	padding: 0%;
+	position: absolute;
+	margin: 55px 0px 0px 110px;
+}
+.mulBtn {
+	height: 50px;
+	width: 50px;
+	border: 2px solid rgb(219, 156, 62);
+	border-radius: 50%;
+	color: whitesmoke;
+	background-color: rgb(219, 156, 62);
+	text-align: center;
+	padding: 0%;
+	position: absolute;
+	margin: 55px 0px 0px 165px;
+}
+
+.fourBtn {
+	height: 50px;
+	width: 50px;
+	border: 2px solid rgb(58, 56, 53);
+	border-radius: 50%;
+	color: whitesmoke;
+	background-color: rgb(58, 56, 53);
+	text-align: center;
+	padding: 0%;
+	position: absolute;
+	margin: 110px 0px 0px 0px;
+}
+.fiveBtn {
+	height: 50px;
+	width: 50px;
+	border: 2px solid rgb(58, 56, 53);
+	border-radius: 50%;
+	color: whitesmoke;
+	background-color: rgb(58, 56, 53);
+	text-align: center;
+	padding: 0%;
+	position: absolute;
+	margin: 110px 0px 0px 55px;
+}
+.sixBtn {
+	height: 50px;
+	width: 50px;
+	border: 2px solid rgb(58, 56, 53);
+	border-radius: 50%;
+	color: whitesmoke;
+	background-color: rgb(58, 56, 53);
+	text-align: center;
+	padding: 0%;
+	position: absolute;
+	margin: 110px 0px 0px 110px;
+}
+.minusBtn {
+	height: 50px;
+	width: 50px;
+	border: 2px solid rgb(219, 156, 62);
+	border-radius: 50%;
+	color: whitesmoke;
+	background-color: rgb(219, 156, 62);
+	text-align: center;
+	padding: 0%;
+	position: absolute;
+	margin: 110px 0px 0px 165px;
+}
+.oneBtn {
+	height: 50px;
+	width: 50px;
+	border: 2px solid rgb(58, 56, 53);
+	border-radius: 50%;
+	color: whitesmoke;
+	background-color: rgb(58, 56, 53);
+	text-align: center;
+	padding: 0%;
+	position: absolute;
+	margin: 165px 0px 0px 0px;
+}
+.twoBtn {
+	height: 50px;
+	width: 50px;
+	border: 2px solid rgb(58, 56, 53);
+	border-radius: 50%;
+	color: whitesmoke;
+	background-color: rgb(58, 56, 53);
+	text-align: center;
+	padding: 0%;
+	position: absolute;
+	margin: 165px 0px 0px 55px;
+}
+.threeBtn {
+	height: 50px;
+	width: 50px;
+	border: 2px solid rgb(58, 56, 53);
+	border-radius: 50%;
+	color: whitesmoke;
+	background-color: rgb(58, 56, 53);
+	text-align: center;
+	padding: 0%;
+	position: absolute;
+	margin: 165px 0px 0px 110px;
+}
+
+.plusBtn {
+	height: 50px;
+	width: 50px;
+	border: 2px solid rgb(219, 156, 62);
+	border-radius: 50%;
+	color: whitesmoke;
+	background-color: rgb(219, 156, 62);
+	text-align: center;
+	padding: 0%;
+	position: absolute;
+	margin: 165px 0px 0px 165px;
+}
+
+.zeroBtn {
+	height: 50px;
+	width: 105px;
+	border: 2px solid rgb(58, 56, 53);
+	border-radius: 9999px;
+	color: whitesmoke;
+	background-color: rgb(58, 56, 53);
+	text-align: center;
+	padding: 0%;
+	position: absolute;
+	margin: 220px 0px 0px 0px;
+}
+.dotBtn {
+	height: 50px;
+	width: 50px;
+	border: 2px solid rgb(58, 56, 53);
+	border-radius: 50%;
+	color: whitesmoke;
+	background-color: rgb(58, 56, 53);
+	text-align: center;
+	padding: 0%;
+	position: absolute;
+	margin: 220px 0px 0px 110px;
+}
+.equalBtn {
+	height: 50px;
+	width: 50px;
+	border: 2px solid rgb(219, 156, 62);
+	border-radius: 50%;
+	color: whitesmoke;
+	background-color: rgb(219, 156, 62);
+	text-align: center;
+	padding: 0%;
+	position: absolute;
+	margin: 220px 0px 0px 165px;
+}
+
+
+
+.fadeColor{
+	background-color: rgb(241, 236, 236);
+	border-color: aliceblue;
+
+
+}
+.fadeColorTwo{
+	background-color: rgb(241, 236, 236);
+	border-color: aliceblue;
+	color: rgb(219, 156, 62);
+}
+.fadeColorThree {
+	background-color: rgb(82, 80, 78);
+	border-color: rgb(82, 80, 78);
+}
